@@ -1,0 +1,113 @@
+/* カラーテーマ: セキュリティ系ブルー */
+:root {
+  --primary: #1a6aba;
+  --secondary: #4a9ed8;
+  --theme: #f4f8fc;
+  --entry: #ffffff;
+  --border: #d0e4f0;
+  --content: #1a1a2e;
+  --hljs-bg: #1e2a3a;
+  --code-bg: #eaf2fb;
+  --header-bg: #1a3a5c;
+}
+
+.dark {
+  --primary: #4a9ed8;
+  --secondary: #7bbde8;
+  --theme: #0d1b2a;
+  --entry: #1a2a3a;
+  --border: #2a3a4a;
+  --content: #e8f0f8;
+  --hljs-bg: #0d1b2a;
+  --code-bg: #1a2a3a;
+  --header-bg: #0a1520;
+}
+
+/* ヘッダー */
+.header {
+  background: var(--header-bg);
+}
+
+.header .logo a,
+.header nav a {
+  color: #e8f0f8 !important;
+}
+
+/* トップページの説明ボックス */
+.home-info-params-title {
+  font-size: 1.6rem;
+  color: var(--primary);
+}
+
+/* 記事カード */
+.post-entry {
+  border-left: 3px solid var(--primary);
+  transition: border-color 0.2s;
+}
+
+.post-entry:hover {
+  border-left-color: var(--secondary);
+}
+
+/* タグ（一覧・記事共通） */
+.post-tags a,
+.terms-tags a {
+  background: var(--code-bg);
+  color: var(--primary);
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  padding: 2px 8px;
+  font-size: 0.8rem;
+}
+
+/* 記事ページ: タイトル */
+.post-header .post-title {
+  color: var(--primary);
+}
+
+/* 記事ページ: メタ情報（日付など） */
+.post-meta {
+  color: var(--secondary);
+}
+
+/* 記事ページ: 見出し */
+.post-content h1,
+.post-content h2,
+.post-content h3,
+.post-content h4 {
+  color: var(--primary);
+  border-left: 4px solid var(--secondary);
+  padding-left: 0.6em;
+}
+
+/* 記事ページ: 水平線 */
+.post-content hr {
+  border-color: var(--border);
+}
+
+/* 記事ページ: テーブル */
+.post-content table th {
+  background: var(--primary);
+  color: #fff;
+}
+
+.post-content table tr:nth-child(even) {
+  background: var(--code-bg);
+}
+
+/* 記事ページ: インラインコード */
+.post-content code {
+  background: var(--code-bg);
+  color: var(--primary);
+  border-radius: 3px;
+  padding: 1px 5px;
+}
+
+/* 記事ページ: ナビゲーション */
+.paginav a {
+  border-color: var(--border);
+}
+
+.paginav .title {
+  color: var(--primary);
+}
